@@ -1,0 +1,52 @@
+{
+  "name": "lib-mono",
+  "version": "1.0.0",
+  "description": "Mix together Lerna to handle a web component monorepo, with storybook to display them and hybrid as web component framework",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "cm": "git-cz",
+    "clean": "lerna clean",
+    "commitmsg": "validate-commit-msg",
+    "publish": "lerna publish --conventional-commits --message 'chore: bump version'",
+    "postinstall": "npm run bootstrap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paker30/lib-mono.git"
+  },
+  "keywords": [
+    "web component",
+    "monorepo",
+    "hermes"
+  ],
+  "author": "Francisco Moreno <morenocfrancisco86@gmail.com",
+  "bugs": {
+    "url": "https://github.com/Paker30/lib-mono/issues"
+  },
+  "homepage": "https://github.com/Paker30/lib-mono#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-lerna-scopes": "^9.1.1",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
+    "cz-lerna-changelog": "^2.0.3",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "generate-changelog": "^1.8.0",
+    "husky": "^4.2.5",
+    "lerna": "^3.22.1",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
