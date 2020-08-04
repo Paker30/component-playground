@@ -1,0 +1,30 @@
+{
+  "name": "ui-lib",
+  "version": "1.0.0",
+  "description": "The UI library for lib-mono",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "storybook": "start-storybook"
+  },
+  "keywords": [
+    "hermes",
+    "storybook",
+    "web component"
+  ],
+  "author": "Francisco Moreno <morenocfrancisco86@gmail.com>",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@storybook/html": "^5.3.19",
+    "babel-loader": "^8.1.0"
+  },
+  "dependencies": {
+    "@storybook/addon-backgrounds": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.19",
+    "@storybook/addon-notes": "^5.3.19",
+    "@storybook/addon-viewport": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "dummy-component": "^1.0.0",
+    "hybrids": "^4.2.1"
+  }
+}

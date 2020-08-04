@@ -1,0 +1,25 @@
+{
+  "name": "dummy-component",
+  "version": "1.0.0",
+  "description": "example component",
+  "scripts": {},
+  "files": [
+    "src"
+  ],
+  "main": "src/index.js",
+  "keywords": [
+    "hermes",
+    "web component"
+  ],
+  "author": "Francisco Moreno <morenocfrancisco86@gmail.com>",
+  "contributors": [
+    "Sergio Alvarez <sergio.alvarez@osp.com>",
+    "Miguel Diaz <miguel.diaz@osp.com>",
+    "Dominik Heller <dominik.heller.ext@hermesworld.com>",
+    "Irina Mamieva"
+  ],
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.4.4",
+    "hybrids": "^4.2.1"
+  }
+}
